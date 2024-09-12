@@ -4,7 +4,8 @@ const router = new Router()
 
 const userController = require("../controller/UserController")
 
-router.get("/user", ()=>{console.log('aaaa')})
-router.post("/user/authByEmail/:email", userController.authByEmail)
+router.get("/user", ()=>{})
+router.post("/user/authByEmail", userController.authByEmail)
+router.get("/user/confirmEmail", userController.confirmEmailGuid)
 
 module.exports = router

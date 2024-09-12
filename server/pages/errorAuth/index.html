@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Успешно!</title>
+	<title>Ошибка</title>
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +15,7 @@
 			margin: 0; padding: 0;
 		}
 		body{
-			text-align: center;
+			text-align: left;
 			font-family: Montserrat;
 			display: flex;
 			justify-content: center;
@@ -28,11 +28,24 @@
 			font-weight: 500;
 			margin-top: 50px;
 		}
-		p{
-			font-size: 22px;
+		.text{
+			opacity: 60%;
+		}
+		ul{
+			margin-left: 30px;
+		}
+		p, ul, li{
+			font-size: 18px;
 			max-width: 370px;
 			font-weight: 400;
 			margin-top: 13px;
+		}
+		ul{
+			margin-top: 12px;
+		}
+		a{
+			display: block;
+			text-align: center;
 		}
 		button{
 			padding: 10px 57px;
@@ -42,15 +55,27 @@
 			background: none;
 			cursor: pointer;
 			font-family: Montserrat;
-			margin-top: 52px;
+			margin-top: 31px;
 		}
 	</style>
 </head>
 <body>
 
-	<h1>Спасибо за регистрацию</h1>
-	<p>Теперь вы можете пользоваться вашим аккаунтом</p>
-	<a href="http://localhost:5173"><button type="button">Перейти</button></a>
+	<div>
+		<h1>Ой.... Ошибка</h1>
+		<div class="text">
+			<p>Это могло произойти в случае:</p>
+			<ul>
+				<li>Подмены данных</li>
+				<li>Повторного перехода по ссылке</li>
+				<li>Непредвиденной ошибки</li>
+				<li>Истек срок действия ссылки</li>
+			</ul>
+		</div>
+		<a href="http://localhost:5173">
+			<button type="button">На главную</button>
+		</a>
+	</div>
 
 </body>
 </html>
